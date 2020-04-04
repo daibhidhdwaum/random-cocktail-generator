@@ -86,8 +86,10 @@ main {
 
 .bubble-container {
   width: 20%;
-  padding-top: 100px;
   position: relative;
+  border: 1px solid red;
+  height: 200px;
+  margin-top: 100px;
 }
 
 .bubble {
@@ -106,7 +108,7 @@ main {
   border-left: 70px solid transparent;
   transform: translateX(180px) rotate(-15deg);
   position: absolute;
-  top: 220px;
+  top: 100px;
   z-index: 1;
 }
 
