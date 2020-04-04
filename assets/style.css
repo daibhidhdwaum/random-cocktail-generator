@@ -3,56 +3,169 @@ h2,
 h3,
 p,
 img,
-button{
-    margin: 0;
+button {
+  margin: 0;
 }
 
-html{
-    font-size: 63.5%;
+html {
+  font-size: 63.5%;
+}
+
+.wrapper {
+  max-width: 1500px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
 }
 
 h1,
-h2{
-    color: white;
-    padding-left: 20px;
+h2 {
+  color: white;
+  padding-left: 20px;
 }
 
-header{
-    display: flex;
+header {
+  background-color: black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.beer {
+  font-size: 5rem;
+}
+
+.cocktail-title {
+  font-size: 7rem;
+}
+
+.cocktail-glass {
+  color: white;
+  font-size: 16rem;
+  box-shadow: 0 0 0 20px white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.cocktail-glass-container {
+  margin: 20px;
+}
+
+main {
+  height: 100vh;
+  background-image: url("./images/andy-bernard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bubble-container {
+  width: 20%;
+  padding-top: 100px;
+  position: relative;
+}
+
+.bubble {
+  justify-content: center;
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.bubble-pointer {
+  width: 0;
+  height: 0;
+  border-top: 120px solid white;
+  border-left: 70px solid transparent;
+  transform: translateX(180px) rotate(-15deg);
+  position: absolute;
+  top: 220px;
+  z-index: 1;
+}
+
+button {
+  background-color: transparent;
+  border: 3px solid black;
+  width: 85%;
+  height: 70%;
+  border-radius: 25px;
+  font-size: 3rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.inner-box {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 30px;
+  max-height: 100%;
+}
+
+section {
+  background-color: black;
+  margin: 20px;
+  width: 40%;
+  max-height: 100vh;
+  height: 80%;
+  color: white;
+}
+
+.cocktail-recipe-container {
+  width: 100%;
+  max-height: 90vh;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.name-and-glass-container{
     justify-content: space-between;
-    background-color: black;
+    align-items: center;
 }
 
-h1{
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-    font-family:  Helvetica, Arial, sans-serif;
-    font-weight: bold;
+img {
+  width: 100%;
+  height: 400px;
 }
 
-h2{
-    padding-bottom: 20px;
-    font-size: 2.2rem;
+.name {
+  font-size: 3rem;
 }
 
-.beer{
-    font-size: 5rem;
+p {
+  padding: 8px;
 }
 
-.cocktail-title{
-    font-size: 7rem;
+.measures,
+.ingredients,
+.glass,
+.instructions {
+  font-size: 2rem;
 }
 
-.cocktail-glass{
-    color: white;
-    font-size: 16rem;
-    box-shadow: 0 0 0 20px white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.cocktail-glass-container{
-    margin: 20px;
+.measures,
+.ingredients{
+    line-height: .8rem;
 }

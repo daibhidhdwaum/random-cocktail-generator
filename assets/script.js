@@ -19,6 +19,8 @@ cocktailApp.fetchCocktail = () => {
     return cocktailSearchResponse;
 }
 
+$("section").hide();
+
 // function to filter object to return only ingredients or measures that were not null
 cocktailApp.filterIngredientsAndMeasures = (array) => {
 
@@ -37,12 +39,13 @@ cocktailApp.filterIngredientsAndMeasures = (array) => {
 
 // create a function to display tab
 cocktailApp.displayCocktail = () => {
+
     const cocktailData = cocktailApp.fetchCocktail();
 
     cocktailData.done((data) => {
         // console.log("This is the drink Data: ", data)
         const randomDrink = data.drinks[0];
-
+        console.log(data.drinks[0]);
         // each key value pair in the object is pushed to an array and stored in a varuable
         const randomDrinksArrays = Object.entries(randomDrink);
 
@@ -89,6 +92,7 @@ cocktailApp.displayCocktail = () => {
 // create init function
 cocktailApp.init = () => {
     $("button").on("click", () => {
+        $("section").show();
         $(".measures").html(" ");
         $(".ingredients").html(" ");
         cocktailApp.displayCocktail();

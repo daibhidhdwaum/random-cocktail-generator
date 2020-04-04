@@ -12,26 +12,46 @@
 
 <body>
     <header>
-        <div class="header-text">
-            <h1>
-                <span class="beer"> Beer Me</span><span class="cocktail-title"> A Cocktail</span>
-            </h1>
-            <h2>A random cocktail recipe generator</h2>
-        </div>
-        <div class="cocktail-glass-container">
-            <i class="fas fa-cocktail cocktail-glass"></i>
+        <div class="wrapper">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>
+                        <span class="beer"> Beer Me</span><span class="cocktail-title"> A Cocktail</span>
+                    </h1>
+                    <h2>A random cocktail recipe generator</h2>
+                </div>
+                <div class="cocktail-glass-container">
+                    <i class="fas fa-cocktail cocktail-glass"></i>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <section>
-            <p class="name"></p>
-            <div class="measures"></div>
-            <div class="ingredients"></div>
-            <p class="glass"></p>
-            <p class="instructions"></p>
-            <div class="image"></div>
-        </section>
-        <button type="submit">Beer Me!</button>
+        <div class="wrapper">
+
+            <div class="cocktail-recipe-container flex">
+                <div class="bubble-container">
+                    <div class="bubble flex">
+                        <button type="submit">Beer Me!</button>
+                    </div>
+                    <div class="bubble-pointer"></div>
+                </div>
+                <section>
+                    <div class="inner-box">
+                        <div class="name-and-glass-container flex">
+                            <p class="name"></p>
+                            <p class="glass"></p>
+                        </div>
+                        <div class="ingredients-container flex">
+                            <div class="measures"></div>
+                            <div class="ingredients"></div>
+                        </div>
+                        <p class="instructions"></p>
+                        <div class="image"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
