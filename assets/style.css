@@ -12,8 +12,8 @@ html {
 }
 
 .wrapper {
-  max-width: 1500px;
-  width: 85%;
+  max-width: 1600px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -115,39 +115,49 @@ button {
   cursor: pointer;
 }
 
+.page-container {
+  width: 100%;
+  max-height: 100vh;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+section {
+  background-color: black;
+  margin-top: 40px;
+  width: 45%;
+  max-height: 100vh;
+  height: 100%;
+  color: white;
+}
+
 .inner-box {
   background-color: black;
   color: white;
   border: 2px solid white;
   padding: 20px;
   margin: 30px;
-  max-height: 100%;
-}
-
-section {
-  background-color: black;
-  margin: 20px;
-  width: 40%;
-  max-height: 100vh;
-  height: 80%;
-  color: white;
-}
-
-.cocktail-recipe-container {
-  width: 100%;
   max-height: 90vh;
-  background-color: transparent;
-  justify-content: space-between;
-}
-
-.name-and-glass-container{
-    justify-content: space-between;
-    align-items: center;
 }
 
 img {
-  width: 100%;
-  height: 400px;
+  width: 400px;
+  max-height: 400px;
+  padding: 20px;
+  object-fit: fill;
+}
+
+.name-glass-image-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredients-container {
+  padding: 10px 0;
+}
+
+.instructions {
+  padding-bottom: 20px;
 }
 
 .name {
@@ -166,6 +176,6 @@ p {
 }
 
 .measures,
-.ingredients{
-    line-height: .8rem;
+.ingredients {
+  line-height: 0.8rem;
 }
