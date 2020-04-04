@@ -143,13 +143,13 @@ section {
   color: white;
   border: 2px solid white;
   padding: 20px;
-  margin: 30px;
+  margin: 15px;
   max-height: 90vh;
 }
 
 img {
-  width: 400px;
-  max-height: 400px;
+  width: 350px;
+  max-height: 350px;
   padding: 20px;
   object-fit: fill;
 }
@@ -160,7 +160,7 @@ img {
 }
 
 .ingredients-container {
-  padding: 10px 0;
+  padding: 0 0 5px 0;
 }
 
 .instructions {
